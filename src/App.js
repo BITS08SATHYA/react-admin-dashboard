@@ -13,9 +13,7 @@ import DashBoard from "./scenes/dashboard";
 // import FAQ from "./scenes/faq";
 // import Geography from "./scenes/geography";
 // import Calendar from "./scenes/calendar";
-import {Routes} from "react-router-dom";
-
-
+import {Routes, Route} from "react-router-dom";
 
 function App() {
 
@@ -30,7 +28,8 @@ function App() {
              <Sidebar />
           <main className="content">
             <Topbar />
-              <Routes path="/" element={<DashBoard />} />
+              <Routes >
+                  <Route path="/" element={<DashBoard />} />
               {/*<Routes path="/team" element={<Team />} />*/}
               {/*<Routes path="/contacts" element={<Contacts />} />*/}
               {/*<Routes path="/invoices" element={<Invoices />} />*/}
@@ -41,6 +40,7 @@ function App() {
               {/*<Routes path="/geography" element={<Geography />} />*/}
               {/*<Routes path="/calendar" element={<Calendar />} />*/}
               {/*<Routes path="/faq" element={<FAQ />} />*/}
+            </Routes>
           </main>
          </div>
        </ThemeProvider>
