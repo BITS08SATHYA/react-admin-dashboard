@@ -1,5 +1,6 @@
 import Headers from "../../components/Headers";
 import {Box} from "@mui/material";
+import TankPumpDiagram from "../tanknozzle/TankNozzle";
 
 const Dashboard = () => {
     return <Box m="20px">
@@ -7,6 +8,7 @@ const Dashboard = () => {
         <Headers title="Dashboard"
         subTitle="Welcome to your Dashboard"
         />
+        {/*<TankPumpDiagram />*/}
     </Box>
 }
 

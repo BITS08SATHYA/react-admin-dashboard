@@ -15,6 +15,8 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import Invoices from "../invoices";
 
 const Item = ({ title, icon, to, selected, setSelected }) => {
     const theme = useTheme();
@@ -93,8 +95,8 @@ const Sidebar = () => {
                     </MenuItem>
                     {
                         !isCollapsed && (
-                            <Box mb="25px">
-                                <Box display="flex" textAlign="center" justify-content="center" alignItems="center">
+                            <Box mb="5px">
+                                <Box display="flex"  justifyContent="center" alignItems="center">
                                 <img
                                     alt="profile-user"
                                     width="100px"
@@ -154,9 +156,9 @@ const Sidebar = () => {
                         />
 
                         <Item
-                            title="Dashboard"
-                            to={"/"}
-                            icon={<HomeOutlinedIcon/>}
+                            title="Invoices"
+                            to={"/invoices"}
+                            icon={<DescriptionOutlinedIcon/>}
                             selected={selected}
                             setSelected={setSelected}
                         />
