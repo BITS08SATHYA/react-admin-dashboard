@@ -8,6 +8,7 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+// import {AppNavigationMenu} from "./NavigationMenu";
 
 
 const styledBox = styled(Box)
@@ -23,14 +24,20 @@ const Topbar = () => {
                 backgroundColor={colors.primary[400]}
                  borderRadius="3px"
             >
-
+                {/* SEARCH BAR */}
                 <InputBase sx={{ ml:2 ,flex: 1}} placeholder="Search" />
                 <IconButton type="button" sx={{ p: 1 }}>
                     <SearchIcon />
                 </IconButton>
             </Box>
 
-            {/* SEARCH BAR */}
+
+            {/*I want the navigation menu right here ! i believe*/}
+            {/*<Box className="flex justify-center flex-1">*/}
+            {/*    <AppNavigationMenu colors={colors} />*/}
+            {/*</Box>*/}
+
+            {/* SIDE ICONS */}
             <Box display="flex">
                 <IconButton onClick={colorMode.toggleColorMode} >
                     {
